@@ -16,7 +16,7 @@ in {
 		chmod 700 ${home}/.config/fastfetch
 
 		cp ${./config.jsonc} ${home}/.config/fastfetch/config.jsonc
-		chown ${config.username}:${group} ${home}/.config/fastfetch/config.jsonc
+		chown ${username}:${group} ${home}/.config/fastfetch/config.jsonc
 		chmod 600 ${home}/.config/fastfetch/config.jsonc
 
 	'';
