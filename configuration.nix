@@ -2,8 +2,8 @@
 
 let
 	username = config.username;
-	group = config.users.users.${config.username}.group or "users";
-	home = config.users.users.${config.username}.home;
+	group = config.users.users.${username}.group or "users";
+	home = config.users.users.${username}.home;
 in {
 	system.activationScripts.fastfetch = ''
 		mkdir -p ${home}/.config
