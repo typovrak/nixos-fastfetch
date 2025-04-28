@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 let
-	group = config.users.users.${username}.group or "users";
+	group = config.users.users.${config.username}.group or "users";
 	home = config.users.users.${username}.home;
 in {
 	system.activationScripts.fastfetch = ''
